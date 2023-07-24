@@ -22,7 +22,8 @@
       theme: {
         extend: {
           colors: {
-            clifford: '#da373d',
+            'grident-start': '#FF8938',
+            'grident-end': '#F00',
           }
         }
       }
@@ -38,8 +39,8 @@
 
 <body class="fan-manrope">
   <header class="container mx-auto">
-    <div class="hero ">
-      <div class="hero-content flex-col lg:flex-row">
+    <div class="my-20 mx-16">
+      <div class="flex justify-between items-center flex-col lg:flex-row">
 
         <div>
           <h1 class="text-7xl font-extrabold">It's good <br>
@@ -48,7 +49,7 @@
           <button class="btn btn-primary">Explore More</button>
         </div>
         <div>
-          <img src="./images/banner.png" class="max-w-sm " />
+          <img src="./images/banner.png" class=" " />
           <div class="-mt-16 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60">
             <i class="fa-solid fa-star text-3xl text-amber-400"></i>
             <div>
@@ -148,7 +149,7 @@
     </section>
     <!-- super section start -->
     <section
-      class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24">
+      class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-grident-start to-grident-end px-16 py-24">
       <div class=" flex items-center pr-28">
         <div class="space-y-5">
           <h2 class="text-5xl font-extrabold text-white">Meet Our Super <br> Clients</h2>
@@ -252,8 +253,59 @@
     </section>
 
   </main>
-  <footer>
+  <!-- footer section start -->
+  <footer class="px-48 py-10 bg-gradient-to-r from-[#FF00001A] to-[#FF89381A] text-base-content">
+    <div class="flex justify-between text-center my-24">
+      <img src="./images/cup.png" alt="">
+      <p>Ready to get strated?
+        <button class="btn text-white bg-gradient-to-r from-grident-start to-grident-end">Get Started</button>
+      </p>
+    </div>
+    <div class="footer">
+      <div>
+        <span class="footer-title">Quick Links</span>
+        <a class="link link-hover">Home</a>
+        <a class="link link-hover">About Us</a>
+        <a class="link link-hover">Insurance</a>
+        <a class="link link-hover">Privacy Policy</a>
+      </div>
+      <div>
+        <span class="footer-title">Our Service</span>
+        <a class="link link-hover">Life Insurance</a>
+        <a class="link link-hover">Car Insurance</a>
+        <a class="link link-hover">Health Insurance</a>
+        <a class="link link-hover">House Insurance</a>
+      </div>
+      <div>
+        <span class="footer-title">Help</span>
+        <a class="link link-hover">FAQs</a>
+        <a class="link link-hover">Contact Us</a>
 
+      </div>
+      <div>
+        <span class="footer-title">Subscribe to our <br> newsletter</span>
+        <div class="form-control w-80">
+          <label class="label">
+
+          </label>
+          <div class="relative">
+            <input type="text" placeholder="Email address"
+              class="py-4 bg-transparent border-b-2 border-black outline-none" />
+            <button
+              class="btn bg-gradient-to-r from-grident-start to-grident-end text-white absolute top-0 right-0 rounded-full"><i
+                class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+        <div class="gap-24">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+        </div>
+      </div>
+    </div>
+    <div class="mt-10 text-center">
+      <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+    </div>
   </footer>
 </body>
 
